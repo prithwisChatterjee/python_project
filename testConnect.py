@@ -1,10 +1,11 @@
+# A Test Connection Page
 import mysql.connector
   
 dataBase = mysql.connector.connect(
-  host ="10.40.2.16",
-  user ="prithwis",
-  passwd ="Prithwis#434",
-  database = "dev_syscontrol"
+  host ="localhost",
+  user ="root",
+  passwd ="",
+  database = "testDb"
 )
 cursorObject = dataBase.cursor()
 query = "SELECT *  FROM art_cons_sourse limit 10"
